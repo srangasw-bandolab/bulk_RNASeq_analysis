@@ -1,0 +1,1188 @@
+[[1]]
+[1] "dplyr"     "stats"     "graphics"  "grDevices" "utils"     "datasets" 
+[7] "methods"   "base"     
+
+[[2]]
+ [1] "Seurat"       "SeuratObject" "sp"           "dplyr"        "stats"       
+ [6] "graphics"     "grDevices"    "utils"        "datasets"     "methods"     
+[11] "base"        
+
+[[3]]
+ [1] "ggplot2"      "Seurat"       "SeuratObject" "sp"           "dplyr"       
+ [6] "stats"        "graphics"     "grDevices"    "utils"        "datasets"    
+[11] "methods"      "base"        
+
+[[4]]
+ [1] "anndata"      "ggplot2"      "Seurat"       "SeuratObject" "sp"          
+ [6] "dplyr"        "stats"        "graphics"     "grDevices"    "utils"       
+[11] "datasets"     "methods"      "base"        
+
+[[5]]
+ [1] "readxl"       "anndata"      "ggplot2"      "Seurat"       "SeuratObject"
+ [6] "sp"           "dplyr"        "stats"        "graphics"     "grDevices"   
+[11] "utils"        "datasets"     "methods"      "base"        
+
+[[6]]
+ [1] "RColorBrewer" "readxl"       "anndata"      "ggplot2"      "Seurat"      
+ [6] "SeuratObject" "sp"           "dplyr"        "stats"        "graphics"    
+[11] "grDevices"    "utils"        "datasets"     "methods"      "base"        
+
+[[7]]
+ [1] "reticulate"   "RColorBrewer" "readxl"       "anndata"      "ggplot2"     
+ [6] "Seurat"       "SeuratObject" "sp"           "dplyr"        "stats"       
+[11] "graphics"     "grDevices"    "utils"        "datasets"     "methods"     
+[16] "base"        
+
+[[8]]
+ [1] "sceasy"       "reticulate"   "RColorBrewer" "readxl"       "anndata"     
+ [6] "ggplot2"      "Seurat"       "SeuratObject" "sp"           "dplyr"       
+[11] "stats"        "graphics"     "grDevices"    "utils"        "datasets"    
+[16] "methods"      "base"        
+
+[[9]]
+ [1] "Polychrome"   "sceasy"       "reticulate"   "RColorBrewer" "readxl"      
+ [6] "anndata"      "ggplot2"      "Seurat"       "SeuratObject" "sp"          
+[11] "dplyr"        "stats"        "graphics"     "grDevices"    "utils"       
+[16] "datasets"     "methods"      "base"        
+
+[[10]]
+ [1] "stringr"      "Polychrome"   "sceasy"       "reticulate"   "RColorBrewer"
+ [6] "readxl"       "anndata"      "ggplot2"      "Seurat"       "SeuratObject"
+[11] "sp"           "dplyr"        "stats"        "graphics"     "grDevices"   
+[16] "utils"        "datasets"     "methods"      "base"        
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32286                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 68714411                                             ||
+||    Successfully assigned alignments : 55564442 (80.9%)                     ||
+||    Running time : 2.75 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32286                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 56017480                                             ||
+||    Successfully assigned alignments : 43478812 (77.6%)                     ||
+||    Running time : 2.26 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32286                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 54610817                                             ||
+||    Successfully assigned alignments : 43140041 (79.0%)                     ||
+||    Running time : 2.26 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32286                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 73163999                                             ||
+||    Successfully assigned alignments : 59190596 (80.9%)                     ||
+||    Running time : 2.88 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32286                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 51703766                                             ||
+||    Successfully assigned alignments : 41699047 (80.6%)                     ||
+||    Running time : 2.11 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32286                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 58290163                                             ||
+||    Successfully assigned alignments : 43894942 (75.3%)                     ||
+||    Running time : 2.52 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32286                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 74278459                                             ||
+||    Successfully assigned alignments : 61087433 (82.2%)                     ||
+||    Running time : 2.99 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32286                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 55007204                                             ||
+||    Successfully assigned alignments : 43918669 (79.8%)                     ||
+||    Running time : 2.30 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32286                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 50272648                                             ||
+||    Successfully assigned alignments : 38909507 (77.4%)                     ||
+||    Running time : 2.03 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32286                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 62378020                                             ||
+||    Successfully assigned alignments : 50915792 (81.6%)                     ||
+||    Running time : 2.63 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32286                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 53252125                                             ||
+||    Successfully assigned alignments : 41421450 (77.8%)                     ||
+||    Running time : 2.25 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32286                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 72164752                                             ||
+||    Successfully assigned alignments : 53931648 (74.7%)                     ||
+||    Running time : 3.01 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+[[1]]
+[1] "dplyr"     "stats"     "graphics"  "grDevices" "utils"     "datasets" 
+[7] "methods"   "base"     
+
+[[2]]
+ [1] "Seurat"       "SeuratObject" "sp"           "dplyr"        "stats"       
+ [6] "graphics"     "grDevices"    "utils"        "datasets"     "methods"     
+[11] "base"        
+
+[[3]]
+ [1] "ggplot2"      "Seurat"       "SeuratObject" "sp"           "dplyr"       
+ [6] "stats"        "graphics"     "grDevices"    "utils"        "datasets"    
+[11] "methods"      "base"        
+
+[[4]]
+ [1] "anndata"      "ggplot2"      "Seurat"       "SeuratObject" "sp"          
+ [6] "dplyr"        "stats"        "graphics"     "grDevices"    "utils"       
+[11] "datasets"     "methods"      "base"        
+
+[[5]]
+ [1] "readxl"       "anndata"      "ggplot2"      "Seurat"       "SeuratObject"
+ [6] "sp"           "dplyr"        "stats"        "graphics"     "grDevices"   
+[11] "utils"        "datasets"     "methods"      "base"        
+
+[[6]]
+ [1] "RColorBrewer" "readxl"       "anndata"      "ggplot2"      "Seurat"      
+ [6] "SeuratObject" "sp"           "dplyr"        "stats"        "graphics"    
+[11] "grDevices"    "utils"        "datasets"     "methods"      "base"        
+
+[[7]]
+ [1] "reticulate"   "RColorBrewer" "readxl"       "anndata"      "ggplot2"     
+ [6] "Seurat"       "SeuratObject" "sp"           "dplyr"        "stats"       
+[11] "graphics"     "grDevices"    "utils"        "datasets"     "methods"     
+[16] "base"        
+
+[[8]]
+ [1] "sceasy"       "reticulate"   "RColorBrewer" "readxl"       "anndata"     
+ [6] "ggplot2"      "Seurat"       "SeuratObject" "sp"           "dplyr"       
+[11] "stats"        "graphics"     "grDevices"    "utils"        "datasets"    
+[16] "methods"      "base"        
+
+[[9]]
+ [1] "Polychrome"   "sceasy"       "reticulate"   "RColorBrewer" "readxl"      
+ [6] "anndata"      "ggplot2"      "Seurat"       "SeuratObject" "sp"          
+[11] "dplyr"        "stats"        "graphics"     "grDevices"    "utils"       
+[16] "datasets"     "methods"      "base"        
+
+[[10]]
+ [1] "stringr"      "Polychrome"   "sceasy"       "reticulate"   "RColorBrewer"
+ [6] "readxl"       "anndata"      "ggplot2"      "Seurat"       "SeuratObject"
+[11] "sp"           "dplyr"        "stats"        "graphics"     "grDevices"   
+[16] "utils"        "datasets"     "methods"      "base"        
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32246                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 68714411                                             ||
+||    Successfully assigned alignments : 55585999 (80.9%)                     ||
+||    Running time : 3.00 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32246                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 56017480                                             ||
+||    Successfully assigned alignments : 43496807 (77.6%)                     ||
+||    Running time : 2.50 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32246                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 54610817                                             ||
+||    Successfully assigned alignments : 43156378 (79.0%)                     ||
+||    Running time : 2.52 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32246                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 73163999                                             ||
+||    Successfully assigned alignments : 59214645 (80.9%)                     ||
+||    Running time : 3.25 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32246                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 51703766                                             ||
+||    Successfully assigned alignments : 41715599 (80.7%)                     ||
+||    Running time : 2.38 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32246                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 58290163                                             ||
+||    Successfully assigned alignments : 43912990 (75.3%)                     ||
+||    Running time : 2.77 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32246                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 74278459                                             ||
+||    Successfully assigned alignments : 61111151 (82.3%)                     ||
+||    Running time : 3.30 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32246                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 55007204                                             ||
+||    Successfully assigned alignments : 43935686 (79.9%)                     ||
+||    Running time : 2.48 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32246                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 50272648                                             ||
+||    Successfully assigned alignments : 38924749 (77.4%)                     ||
+||    Running time : 2.21 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32246                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 62378020                                             ||
+||    Successfully assigned alignments : 50937495 (81.7%)                     ||
+||    Running time : 2.82 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32246                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 53252125                                             ||
+||    Successfully assigned alignments : 41444405 (77.8%)                     ||
+||    Running time : 2.40 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.18.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Aligned.sortedByCoord.out.bam                    ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : updated.genes.gtf (GTF)                          ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 32                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file updated.genes.gtf ...                                 ||
+||    Features : 805201                                                       ||
+||    Meta-features : 32246                                                   ||
+||    Chromosomes/contigs : 42                                                ||
+||                                                                            ||
+|| Process BAM file Aligned.sortedByCoord.out.bam...                          ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 72164752                                             ||
+||    Successfully assigned alignments : 53955613 (74.8%)                     ||
+||    Running time : 3.16 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+

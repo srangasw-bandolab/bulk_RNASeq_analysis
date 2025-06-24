@@ -1,0 +1,24 @@
+	STAR --runMode genomeGenerate --genomeDir /xchip/beroukhimlab/srangasw/POMT/genome/STAR --genomeFastaFiles /xchip/beroukhimlab/srangasw/POMT/genome/mouse/fasta/updated.genome.fa " "
+	STAR version: 2.7.10a   compiled: 2022-09-23T14:14:35-0400 scs-build-rhel7.broadinstitute.org:/tmp/redhat_7_x86_64/star_2.7.10a-build/STAR-2.7.10a/source
+Jan 08 22:03:15 ..... started STAR run
+Jan 08 22:03:15 ... starting to generate Genome files
+	/broad/software/free/Linux/redhat_7_x86_64/pkgs/star_2.7.10a/bin/STAR --runMode genomeGenerate --genomeDir /xchip/beroukhimlab/srangasw/POMT/genome/STAR --genomeFastaFiles /xchip/beroukhimlab/srangasw/POMT/genome/mouse/fasta/updated.genome.fa " "
+	STAR version: 2.7.10a   compiled: 2022-09-23T14:14:35-0400 scs-build-rhel7.broadinstitute.org:/tmp/redhat_7_x86_64/star_2.7.10a-build/STAR-2.7.10a/source
+Jan 08 23:33:21 ..... started STAR run
+Jan 08 23:33:21 ... starting to generate Genome files
+	STAR --runMode genomeGenerate --genomeDir /xchip/beroukhimlab/srangasw/POMT/genome/STAR_gfp --genomeFastaFiles /xchip/beroukhimlab/srangasw/POMT/genome/mouse/fasta/updated.genome.fa --sjdbGTFfile /xchip/beroukhimlab/srangasw/POMT/genome/mouse/genes/updated.genes.gtf --sjdbOverhang 150
+	STAR version: 2.7.10a   compiled: 2022-09-23T14:14:35-0400 scs-build-rhel7.broadinstitute.org:/tmp/redhat_7_x86_64/star_2.7.10a-build/STAR-2.7.10a/source
+Jan 09 21:34:57 ..... started STAR run
+Jan 09 21:34:57 ... starting to generate Genome files
+Jan 09 21:35:39 ..... processing annotations GTF
+Jan 09 21:36:03 ... starting to sort Suffix Array. This may take a long time...
+Jan 09 21:36:19 ... sorting Suffix Array chunks and saving them to disk...
+Jan 09 22:54:16 ... loading chunks from disk, packing SA...
+Jan 09 22:55:13 ... finished generating suffix array
+Jan 09 22:55:13 ... generating Suffix Array index
+Jan 09 22:57:58 ... completed Suffix Array index
+Jan 09 22:57:59 ..... inserting junctions into the genome indices
+Jan 09 23:07:19 ... writing Genome to disk ...
+Jan 09 23:07:26 ... writing Suffix Array to disk ...
+Jan 09 23:08:10 ... writing SAindex to disk
+Jan 09 23:08:16 ..... finished successfully
