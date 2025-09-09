@@ -18,16 +18,13 @@ fastqc -f fastq -o /path/to/fastqc_results/raw ${INPUT_DIR}/*fastq.gz
 
 # Trim adapters and low quality bases using fastp
 mkdir -p "$OUTPUT_DIR"
-for R1_FILE in "$INPUT_DIR"/*_R1_001.fastq.gz; do 
+for R1_FILE in "$INPUT_DIR"/*_R1*.fastq.gz; do 
 	BASENAME=$(basename "$R1_FILE" _R1_001.fastq.gz)
-	R2_FILE="$INPUT_DIR/${BASENAME}_R2_001.fastq.gz"
     echo "Processing $BASENAME"
-	OUT_R1="$OUTPUT_DIR/${BASENAME}_R1_001_trimmed.fastq.gz"
-    OUT_R2="$OUTPUT_DIR/${BASENAME}_R2_001_trimmed.fastq.gz"
-    REPORT_HTML="$OUTPUT_DIR/${BASENAME}_fastp_report.html"
-    REPORT_JSON="$OUTPUT_DIR/${BASENAME}_fastp_report.json"
-	fastp -i "$R1_FILE" -I "$R2_FILE" -o "$OUT_R1" -O "$OUT_R2" --detect_adapter_for_pe -l 20 -h "$REPORT_HTML" -j "$REPORT_JSON" --overlap_len_require 15
+	fastp -i "$R1_FILE" -I "$INPUT_DIR/${BASENAME}_R2_001.fastq.gz" -o "$OUTPUT_DIR/${BASENAME}_R1_001_trimmed.fastq.gz" -O "$OUTPUT_DIR/${BASENAME}_R2_001_trimmed.fastq.gz" --detect_adapter_for_pe -l 20 -h "$OUTPUT_DIR/${BASENAME}_report.html" -j REPORT_JSON="$OUTPUT_DIR/${BASENAME}_report.json" --overlap_len_require 15
 done
 
 # Do fastQC on trimmed data
 fastqc -f fastq -o /path/to/fastqc_results/trim ${OUTPUT_DIR}/*fastq.gz 
+
+
