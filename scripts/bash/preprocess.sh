@@ -14,7 +14,7 @@ module load fastqc
 INPUT_DIR="/path/to/raw_data/"
 OUTPUT_DIR="/path/to/trimmed_data"
 # Do fastQC on raw_data
-#fastqc -f fastq -o /path/to/fastqc_results/raw ${INPUT_DIR}/*fastq.gz 
+fastqc -f fastq -o /path/to/fastqc_results/raw ${INPUT_DIR}/*fastq.gz 
 
 # Trim adapters and low quality bases using fastp
 mkdir -p "$OUTPUT_DIR"
