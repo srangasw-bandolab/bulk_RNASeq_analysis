@@ -27,4 +27,6 @@ done
 # Do fastQC on trimmed data
 fastqc -f fastq -o /path/to/fastqc_results/trim ${OUTPUT_DIR}/*fastq.gz 
 
-
+ls $OUTPUT_DIR/*.fastq $OUTPUT_DIR/*.fastq.gz 2>/dev/null | \
+> sed -E 's/_L[0-9]{3}_R[12]_001_trimmed\.fastq(\.gz)?$//' | \
+> sort -u > $OUTPUT_DIR/samples.txt
