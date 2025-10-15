@@ -48,7 +48,7 @@ write.csv(fc_pos, paste(wd, "data/bulk/counts/bams/fc_pomt_pos.csv", sep = "/") 
 ### DESeq2 on merged counts ###
 
 ```{r}
-fc_pos <- read.csv(paste(wd, "data/bulk/counts/bams/fc_pomt_pos.csv", sep = "/"))
+fc_pos <- read.csv("fc_pomt_pos.csv")
 rownames(fc_pos) <- make.unique(fc_pos[, 1]) 
 fc_pos$X <- NULL
 # Make DESeq2 object
@@ -65,10 +65,11 @@ res.shr <- lfcShrink(dds,coef="condition_pomt1_vs_rosa26")
 resFix <- res.shr[!is.na(res.shr$padj),]
 # write.csv(as.data.frame(resFix), file="pomt_deseq2_output.csv")
 ```
+
 ```{r}
 #plotting PCA grouped by condition
 #log transform counts
-rld <- rlog(dds)
-plotPCA(rld)
+vsd <- vst(dds)
+plotPCA(vsd)
 ```
 
