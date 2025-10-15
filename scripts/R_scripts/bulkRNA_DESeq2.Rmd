@@ -1,0 +1,74 @@
+---
+title: "bulkRNA_DESeq2"
+output: html_document
+---
+
+```{r}
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install("DESeq2")
+library(DESeq2)
+library(data.table)
+library(glue)
+```
+```{r}
+wd <- "/path/to/POMT/project"
+```
+
+```{r}
+# Make feature counts
+dt_list <- list()
+txt_files <- list.files(paste(wd, "data/bulk/counts/bams", sep = "/"), pattern = "\\.txt$")
+for (i in 1:length(txt_files)){
+    file_path = paste(wd, "data/bulk/counts/bams", txt_files[[i]], sep = "/")
+    dt <- read.table(file_path)
+    new_name <- sub("_counts.txt$", "", txt_files[[i]])
+    dt_counts <- setNames(data.frame(dt[, 1]), new_name)
+    rownames(dt_counts) <- dt[, 2]
+    dt_list[[i]] <- dt_counts
+}
+merged_dt <- Reduce(function(x, y) {
+  merged <- merge(x, y, by = "row.names", all = TRUE)
+  rownames(merged) <- merged$Row.names
+  merged$Row.names <- NULL
+  merged
+}, dt_list)
+write.csv(merged_dt, paste(wd, "data/bulk/counts/bams/fc_POMT.csv", sep = "/"))
+```
+
+
+```{r}
+fc <- read.csv(paste(wd, "data/bulk/counts/bams/fc_POMT.csv", sep = "/"))
+rownames(fc) <- fc$X
+fc_pos <- fc[, c("rosa26_pos1","rosa26_pos2","rosa26_pos3", 
+                 "pomt1_pos1","pomt1_pos2","pomt1_pos3")]
+write.csv(fc_pos, paste(wd, "data/bulk/counts/bams/fc_pomt_pos.csv", sep = "/") )
+```
+
+### DESeq2 on merged counts ###
+
+```{r}
+fc_pos <- read.csv(paste(wd, "data/bulk/counts/bams/fc_pomt_pos.csv", sep = "/"))
+rownames(fc_pos) <- make.unique(fc_pos[, 1]) 
+fc_pos$X <- NULL
+# Make DESeq2 object
+condition <- c("rosa26", "rosa26", "rosa26", "pomt1", "pomt1", "pomt1")
+dds <- DESeqDataSetFromMatrix(fc_pos, data.frame(condition), ~ condition)
+dds <- dds[rowSums(counts(dds))>=10,]
+```
+
+```{r}
+dds$condition <- relevel(dds$condition, ref = "rosa26")
+dds <- DESeq(dds) 
+res <- results(dds)
+res.shr <- lfcShrink(dds,coef="condition_pomt1_vs_rosa26")
+resFix <- res.shr[!is.na(res.shr$padj),]
+# write.csv(as.data.frame(resFix), file="pomt_deseq2_output.csv")
+```
+```{r}
+#plotting PCA grouped by condition
+#log transform counts
+rld <- rlog(dds)
+plotPCA(rld)
+```
+
